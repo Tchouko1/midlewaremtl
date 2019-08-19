@@ -9,10 +9,10 @@ public class AddressAgent extends Agent {
 
     @Override
     protected void setup() {
-        ACLMessage message = new ACLMessage(ACLMessage.INFORM);
-        message.addReceiver(new AID("SearchAgent",AID.ISLOCALNAME));
-        message.setContent("Hello the world....");
-        send(message);
+        //ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+       // message.addReceiver(new AID("InterfaceAgent",AID.ISLOCALNAME));
+        //message.setContent("Hello the world....");
+       // send(message);
 
     }
 }

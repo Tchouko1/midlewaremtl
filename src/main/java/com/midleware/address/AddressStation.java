@@ -31,8 +31,6 @@ public class AddressStation {
     @Column(name = "Longitude")
     private String longitude;
 
-    private long date;
-
     public int getId() {
         return id;
     }

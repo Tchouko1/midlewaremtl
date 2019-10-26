@@ -1,14 +1,14 @@
-package com.midleware.search;
+package com.midleware.ui;
 
 
+import com.midleware.address.Address;
 import jade.core.AID;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.gui.GuiAgent;
 import jade.gui.GuiEvent;
 import jade.lang.acl.ACLMessage;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.io.IOException;
 
 public class InterfaceAgent extends GuiAgent {
 
@@ -65,10 +65,15 @@ public class InterfaceAgent extends GuiAgent {
 
             case 1 :
                 ACLMessage aclMessage = new ACLMessage(ACLMessage.REQUEST);
-                aclMessage.addReceiver(new AID("searchAgent",AID.ISLOCALNAME));
-                Map<String, String> params = (Map<String, String>) guiEvent.getParameter(0);
-
-                //aclMessage.setContent(params);
+                Address address = (Address) guiEvent.getParameter(0);
+                aclMessage.addReceiver(new AID(address.getAgent(), AID.ISLOCALNAME));
+                try {
+                    aclMessage.setContentObject(address);
+                    aclMessage.setOntology("ui-address");
+                    send(aclMessage);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 break;
         }
 

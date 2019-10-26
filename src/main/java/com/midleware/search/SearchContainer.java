@@ -1,5 +1,6 @@
 package com.midleware.search;
 
+import com.midleware.address.AddressAgent;
 import jade.core.Profile;
 import jade.core.ProfileImpl;
 import jade.core.Runtime;
@@ -7,7 +8,8 @@ import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import jade.wrapper.StaleProxyException;
 
-public class InterfaceContainer {
+
+public class SearchContainer {
 
     public static void main(String[] args) {
         try {
@@ -15,11 +17,11 @@ public class InterfaceContainer {
 
             Profile profile = new ProfileImpl(false);
             profile.setParameter(Profile.MAIN_HOST, "localhost");
-            profile.setParameter(Profile.CONTAINER_NAME, "InterfaceContainer");
+            profile.setParameter(Profile.CONTAINER_NAME, "SearchContainer");
 
             ContainerController container = runtime.createAgentContainer(profile);
             try {
-                AgentController ag = container.createNewAgent("interfaceAgent", InterfaceAgent.class.getName(), new Object[] {});
+                AgentController ag = container.createNewAgent("searchAgent", SearchAgent.class.getName(), new Object[] {});
                 ag.start();
             } catch (StaleProxyException e) {
                 e.printStackTrace();

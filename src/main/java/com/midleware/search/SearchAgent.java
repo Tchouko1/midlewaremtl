@@ -25,6 +25,7 @@ public class SearchAgent extends Agent {
                         Address address = (Address) aclMessage.getContentObject();
                         System.out.println(address.getArrondissement());
 
+
                         ACLMessage aclMessage1 = aclMessage.createReply();
                         aclMessage1.setPerformative(ACLMessage.INFORM);
                         aclMessage1.setContent("Arrondissement recu, traitement en cours!");

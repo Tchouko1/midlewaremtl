@@ -17,7 +17,7 @@ public class InterfaceAgent extends GuiAgent {
     protected void setup() {
        searchAgentGUI = new InterfaceAgentGUI();
        searchAgentGUI.setInterfaceAgent(this);
-       System.out.println("Demmarrage de l'agent recherche");
+       System.out.println("Demmarrage de l'agent d'interface");
 
        // ParallelBehaviour parallelBehaviour = new ParallelBehaviour();
        // addBehaviour(parallelBehaviour);

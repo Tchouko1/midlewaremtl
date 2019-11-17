@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8702d52a-c184-4dbc-bb90-ceaed7164188" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/midleware/address/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchContainer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/search/InterfaceAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/search/InterfaceAgentGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/search/InterfaceContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,14 +21,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+            <state relative-caret-position="152">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3866#3867#0" expanded="true" />
                 <element signature="e#3903#3904#0" expanded="true" />
+                <element signature="e#3971#3972#0" expanded="true" />
                 <element signature="e#4023#4024#0" expanded="true" />
               </folding>
             </state>
@@ -41,25 +38,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceContainer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="21" column="77" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="77" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
+            <state relative-caret-position="164">
+              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#673#1436#0" expanded="true" />
                 <element signature="e#1435#1436#0" expanded="true" />
               </folding>
             </state>
@@ -67,19 +51,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/search/SearchContainer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressContainer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+            <state relative-caret-position="418">
+              <caret line="22" column="75" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressContainer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="361">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,12 +77,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+            <state relative-caret-position="278">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#389#528#0" expanded="true" />
-                <element signature="e#527#528#0" expanded="true" />
+                <element signature="e#502#1376#0" expanded="true" />
+                <element signature="e#1375#1376#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,6 +105,7 @@
       <find>address</find>
       <find>adress</find>
       <find>addressAgent</find>
+      <find>Demmar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,18 +132,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/controller/MTLController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/address/AddressStation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgentGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/InterfaceContainer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/InterfaceAgentGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/InterfaceAgent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/address/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/MainContainer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchContainer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java" />
       </list>
     </option>
   </component>
@@ -167,10 +155,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2182" />
-    <option name="y" value="148" />
-    <option name="width" value="1658" />
-    <option name="height" value="941" />
+    <option name="x" value="384" />
+    <option name="y" value="121" />
+    <option name="width" value="1390" />
+    <option name="height" value="810" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -178,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -346,6 +333,23 @@
               <item name="Maven: net.sf.ingenias:jade:4.3" type="70bed36:NamedLibraryElementNode" />
               <item name="jade-4.3.jar" type="462c0819:PsiDirectoryNode" />
               <item name="jade" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="midlewareMTL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: net.sf.ingenias:jade:4.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="jade-4.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jade" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="FIPAAgentManagement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="midlewareMTL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: net.sf.ingenias:jade:4.3" type="70bed36:NamedLibraryElementNode" />
+              <item name="jade-4.3.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="jade" type="462c0819:PsiDirectoryNode" />
               <item name="gui" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -369,6 +373,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -406,7 +411,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InterfaceContainer">
+  <component name="RunManager" selected="Application.AddressContainer">
     <configuration name="AddressContainer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.midleware.address.AddressContainer" />
       <module name="midlewareMTL" />
@@ -492,15 +497,15 @@
       <item itemvalue="Application.InterfaceContainer" />
       <item itemvalue="Application.MainContainer" />
       <item itemvalue="Application.AddressContainer" />
-      <item itemvalue="Maven.midlewareMTL" />
       <item itemvalue="Application.SearchContainer" />
+      <item itemvalue="Maven.midlewareMTL" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SearchContainer" />
-        <item itemvalue="Application.InterfaceContainer" />
-        <item itemvalue="Application.MainContainer" />
         <item itemvalue="Application.AddressContainer" />
+        <item itemvalue="Application.InterfaceContainer" />
+        <item itemvalue="Application.SearchContainer" />
+        <item itemvalue="Application.MainContainer" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +524,8 @@
       <workItem from="1566144626106" duration="21690000" />
       <workItem from="1567360225984" duration="611000" />
       <workItem from="1568603813549" duration="636000" />
-      <workItem from="1572048895551" duration="12564000" />
+      <workItem from="1572048895551" duration="13188000" />
+      <workItem from="1573952507413" duration="6116000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de la date">
       <created>1566147019651</created>
@@ -535,18 +541,25 @@
       <option name="project" value="LOCAL" />
       <updated>1566175957074</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="creation de l'agent interface...">
+      <created>1572064374647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572064374648</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52039000" />
+    <option name="totallyTimeSpent" value="58779000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1986" y="0" width="1854" height="1080" extended-state="6" />
+    <frame x="66" y="27" width="1854" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49725777" visible="true" weight="0.25995576" />
-      <window_info id="Structure" order="1" sideWeight="0.50274223" side_tool="true" visible="true" weight="0.25995576" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.848" weight="0.26272124" />
+      <window_info id="Structure" order="1" sideWeight="0.152" side_tool="true" weight="0.26272124" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -557,7 +570,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32735425" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.35364527" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4047878" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45593035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -579,8 +592,8 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49908593" visible="true" weight="0.25995576" />
-      <window_info id="Structure" order="1" sideWeight="0.5009141" side_tool="true" visible="true" weight="0.25995576" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.848" visible="true" weight="0.26272124" />
+      <window_info id="Structure" order="1" sideWeight="0.152" side_tool="true" visible="true" weight="0.26272124" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -591,7 +604,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32735425" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.35364527" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4047878" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.45593035" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -626,7 +639,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java</url>
-          <line>11</line>
+          <line>13</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -838,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/Address.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
@@ -880,19 +883,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/search/SearchContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/sf/ingenias/jade/4.3/jade-4.3.jar!/jade/domain/FIPAAgentManagement/DFAgentDescription.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="85" column="39" lean-forward="true" selection-start-line="85" selection-start-column="39" selection-end-line="116" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="418">
+          <caret line="22" column="75" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/address/AddressAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#502#1376#0" expanded="true" />
+            <element signature="e#1375#1376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceContainer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="399">
           <caret line="21" column="77" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -900,45 +939,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/search/SearchContainer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="23" column="74" selection-start-line="23" selection-start-column="74" selection-end-line="23" selection-end-column="74" />
+        <state relative-caret-position="164">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgentGUI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="114" column="36" selection-start-line="114" selection-start-column="36" selection-end-line="114" selection-end-column="36" />
+        <state relative-caret-position="152">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#3866#3867#0" expanded="true" />
             <element signature="e#3903#3904#0" expanded="true" />
+            <element signature="e#3971#3972#0" expanded="true" />
             <element signature="e#4023#4024#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/search/SearchAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="35" column="17" lean-forward="true" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#389#528#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="56" column="12" lean-forward="true" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#673#1436#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
           </folding>
         </state>
       </provider>

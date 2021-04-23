@@ -5,12 +5,14 @@
     <session-factory name="hibernateSessionFactory">
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.password">root</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/MTLDB</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/mtldonnees?useSSL=false&amp;serverTimezone=UTC</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
         <!--   <property name="hibernate.hbm2ddl.auto">create</property> -->
-        <mapping class="com.midleware.rue.AddressStation"/>
+        <mapping class="com.midleware.address.AddressStation"/>
+        <mapping class="com.midleware.polluant.Polluant"/>
+        <mapping class="com.midleware.polluant.SO2"/>
     </session-factory>
 </hibernate-configuration>

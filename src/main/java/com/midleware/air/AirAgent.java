@@ -1,5 +1,6 @@
-package com.midleware.address;
+package com.midleware.air;
 
+import com.midleware.address.Address;
 import com.midleware.utils.MidleWareSQL;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
@@ -12,17 +13,13 @@ import jade.domain.FIPAException;
 import jade.lang.acl.ACLMessage;
 import jade.lang.acl.UnreadableException;
 
-import java.sql.SQLException;
-
-
-
 import java.io.IOException;
 import java.sql.SQLException;
 
-import static com.midleware.utils.MidleWareUtils.SEARCH_ADDRESS;
+import static com.midleware.utils.MidleWareUtils.SEARCH_POLLUANT;
 
 
-public class AddressAgent extends Agent {
+public class AirAgent extends Agent {
 
     @Override
     protected void setup() {
@@ -37,12 +34,12 @@ public class AddressAgent extends Agent {
                 DFAgentDescription agentDescription = new DFAgentDescription();
                 agentDescription.setName(getAID());
                 ServiceDescription serviceDescription = new ServiceDescription();
-                serviceDescription.setType("address");
-                serviceDescription.setName(SEARCH_ADDRESS);
+                serviceDescription.setType("air");
+                System.out.println("Je suis l'agent AIR j'enregistre mes services");
+                serviceDescription.setName(SEARCH_POLLUANT);
                 agentDescription.addServices(serviceDescription);
 
                 try {
-                    // DFService.deregister(myAgent);
                     DFService.register(myAgent, agentDescription);
                 } catch (FIPAException fe){
                     fe.printStackTrace();
@@ -58,8 +55,8 @@ public class AddressAgent extends Agent {
                 if(aclMessage != null){
                     switch (aclMessage.getPerformative()){
                         case ACLMessage.CFP :
-                            try {
-                                Address address = (Address) aclMessage.getContentObject();
+                          //  try {
+                              /*  Address address = (Address) aclMessage.getContentObject();
                                 String stationID = getStationID(address.getArrondissement());
                                 System.out.println("J'ai recu la proposition pour rechercher la borne qui correspond a l'adresse:"+aclMessage.getContent());
                                 System.out.println("La station id de " + address.getArrondissement() + " est : " + stationID);
@@ -68,12 +65,12 @@ public class AddressAgent extends Agent {
                                 aclMessage1.setPerformative(ACLMessage.INFORM);
                                 address.setNumero(stationID);
                                 aclMessage1.setContentObject(address);
-                                send(aclMessage1);
+                                send(aclMessage1);*/
                                 break;
-                            } catch (UnreadableException | IOException e) {
+                          /*  } catch (UnreadableException | IOException e) {
                                 e.printStackTrace();
                             }
-
+*/
 
                         case ACLMessage.ACCEPT_PROPOSAL:
 
@@ -101,6 +98,8 @@ public class AddressAgent extends Agent {
 
     }
 
+
+    // recupere le poluant
     public String getStationID(String arrondissementVille ){
 
         MidleWareSQL.makeJDBCConnection();

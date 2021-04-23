@@ -12,6 +12,7 @@ public class Address implements Serializable {
     private String province;
     private String codePostal;
     private String arrondissement;
+    private String date;
 
     public String getAgent() {
         return agent;
@@ -75,5 +76,20 @@ public class Address implements Serializable {
 
     public void setArrondissement(String arrondissement) {
         this.arrondissement = arrondissement;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "arrondissement='" + arrondissement + '\'' +
+                '}';
     }
 }

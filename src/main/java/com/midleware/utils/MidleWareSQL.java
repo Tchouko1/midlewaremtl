@@ -22,7 +22,7 @@ public class MidleWareSQL {
 
         try {
             // DriverManager: The basic service for managing a set of JDBC drivers.
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/MTLDB", "root", "root");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mtldonnees?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "root");
             if (connection != null) {
                 log("Connection Successful! Enjoy.");
             } else {

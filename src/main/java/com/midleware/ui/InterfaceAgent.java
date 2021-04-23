@@ -2,25 +2,35 @@ package com.midleware.ui;
 
 
 import com.midleware.address.Address;
+import com.midleware.dao.AddressStationDAOImpl;
+import com.midleware.dao.PolluantDAO;
+import com.midleware.dao.PolluantDAOImpl;
 import jade.core.AID;
 import jade.core.behaviours.CyclicBehaviour;
+import jade.domain.DFService;
+import jade.domain.FIPAAgentManagement.DFAgentDescription;
+import jade.domain.FIPAAgentManagement.ServiceDescription;
+import jade.domain.FIPAException;
 import jade.gui.GuiAgent;
 import jade.gui.GuiEvent;
 import jade.lang.acl.ACLMessage;
+import jade.lang.acl.UnreadableException;
 
 import java.io.IOException;
+
+import static com.midleware.utils.MidleWareUtils.SEARCH_POLLUANT;
 
 public class InterfaceAgent extends GuiAgent {
 
     InterfaceAgentGUI searchAgentGUI;
     @Override
     protected void setup() {
-       searchAgentGUI = new InterfaceAgentGUI();
-       searchAgentGUI.setInterfaceAgent(this);
-       System.out.println("Demmarrage de l'agent d'interface");
+        searchAgentGUI = new InterfaceAgentGUI();
+        searchAgentGUI.setInterfaceAgent(this);
+        System.out.println("Demmarrage de l'agent d'interface");
 
-       // ParallelBehaviour parallelBehaviour = new ParallelBehaviour();
-       // addBehaviour(parallelBehaviour);
+        // ParallelBehaviour parallelBehaviour = new ParallelBehaviour();
+        // addBehaviour(parallelBehaviour);
         addBehaviour(new CyclicBehaviour() {
 
             @Override
@@ -28,11 +38,46 @@ public class InterfaceAgent extends GuiAgent {
                 ACLMessage message = receive();
                 if(message != null){
 
-                    searchAgentGUI.showMessage("Sender" +message.getSender().getName(), true);
-                    searchAgentGUI.showMessage("Acte de message : " +ACLMessage.getPerformative(message.getPerformative()), true);
-                    searchAgentGUI.showMessage("Content  : " +message.getContent(), true);
-                    searchAgentGUI.showMessage("Language  : " +message.getLanguage(), true);
-                    searchAgentGUI.showMessage("Ontology  : " +message.getOntology(), true);
+                    switch (message.getPerformative()){
+                        case ACLMessage.INFORM:
+
+                            new PolluantDAOImpl().getAllPolluantByStationIDAndDate("3", "10-01-2020");
+                            new PolluantDAOImpl().getAllSO2ByStationIDAndDate("3", "10-01-2020");
+                            searchAgentGUI.showMessage("Sender: " +message.getSender().getName(), true);
+                            searchAgentGUI.showMessage("Act de message : " +ACLMessage.getPerformative(message.getPerformative()), true);
+                            searchAgentGUI.showMessage("Content  : " + message.getContent(), true);
+                            break;
+
+                            case ACLMessage.PROPOSE:
+
+                                searchAgentGUI.showMessage("Sender: " +message.getSender().getName(), true);
+                                searchAgentGUI.showMessage("Act de message : " +ACLMessage.getPerformative(message.getPerformative()), true);
+                                try {
+                                    Address address = (Address) message.getContentObject();
+                                    searchAgentGUI.showMessage("Content  : J'ai recu la station id " + address.getNumero(), true);
+
+                                    // Ensuite cet agent va envoyer le station iD ainsi que la date a l'agent air
+                                    // qui ont publié leur service de type SEARCH_POLLUANT
+                                    DFAgentDescription agentDescription = new DFAgentDescription();
+                                    ServiceDescription serviceDescription = new ServiceDescription();
+                                    serviceDescription.setType("air");
+                                    serviceDescription.setName(SEARCH_POLLUANT);
+                                    agentDescription.addServices(serviceDescription);
+                                    DFAgentDescription[] dfAgentDescriptions = DFService.search(myAgent, agentDescription);
+                                    AID agentAddress = dfAgentDescriptions[0].getName();
+                                    ACLMessage aclMessage = new ACLMessage(ACLMessage.CFP);
+                                    aclMessage.setContentObject(address);
+                                    aclMessage.addReceiver(agentAddress);
+                                    send(aclMessage);
+
+                                } catch (UnreadableException | IOException | FIPAException e) {
+                                    e.printStackTrace();
+                                }
+
+                                break;
+                    }
+
+
                 }
                 else
                     block();
@@ -40,22 +85,6 @@ public class InterfaceAgent extends GuiAgent {
             }
         });
 
-        /*parallelBehaviour.addSubBehaviour(new OneShotBehaviour() {
-           @Override
-           public void action() {
-               searchAgentGUI.showMessage("Bonne");
-           }
-       });
-
-        parallelBehaviour.addSubBehaviour(new TickerBehaviour(this, 1000) {
-            private  int counter;
-           @Override
-           protected void onTick() {
-               counter++;
-               searchAgentGUI.showMessage("Tiker bonne"+ counter);
-
-           }
-       });*/
 
     }
 
@@ -79,3 +108,4 @@ public class InterfaceAgent extends GuiAgent {
 
     }
 }
+

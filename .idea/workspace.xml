@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6e24cb-c904-4bb6-b114-0de25317ba34" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/midleware/calcul/CalculAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/midleware/calcul/CalculContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/IQA.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/air/AirAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/air/AirAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/PM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/PM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/Polluant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/Polluant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/SO2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/polluant/SO2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/service/PolluantService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/service/PolluantService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/ui/InterfaceAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/midleware/utils/MidleWareUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/midleware/utils/MidleWareUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/air/AirAgent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/air/AirAgent$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/air/AirAgent$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/air/AirAgent$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/air/AirAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/air/AirAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/polluant/PM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/polluant/PM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/polluant/Polluant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/polluant/Polluant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/polluant/SO2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/polluant/SO2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/ui/InterfaceAgent$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/ui/InterfaceAgent$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/ui/InterfaceAgent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/ui/InterfaceAgent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/utils/MidleWareUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/utils/MidleWareUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/midleware/service/PolluantService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/midleware/service/PolluantService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619163150053</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit du projet ajout d une nouvelle interface">
+      <created>1619302670547</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1619302670547</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -219,62 +211,62 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2372" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619143039577" />
-    <state x="2722" y="227" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1619297123671">
+    <state x="2722" y="227" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1619307523482">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2722" y="227" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619297123671" />
+    <state x="2722" y="227" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619307523482" />
     <state x="2457" y="0" width="903" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619160999366">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2457" y="0" width="903" height="1080" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619160999366" />
-    <state x="2177" y="423" width="1586" height="568" key="#xdebugger.evaluate" timestamp="1619300286486">
+    <state x="2177" y="423" width="1586" height="568" key="#xdebugger.evaluate" timestamp="1619306946249">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2177" y="423" width="1586" height="568" key="#xdebugger.evaluate/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619300286486" />
-    <state x="2453" y="84" width="912" height="918" key="CommitChangelistDialog2" timestamp="1619163149864">
+    <state x="2177" y="423" width="1586" height="568" key="#xdebugger.evaluate/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306946249" />
+    <state x="2453" y="84" width="912" height="918" key="CommitChangelistDialog2" timestamp="1619302670285">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2453" y="84" width="912" height="918" key="CommitChangelistDialog2/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619163149864" />
-    <state width="550" height="506" key="DebuggerActiveHint" timestamp="1619300670185">
+    <state x="2453" y="84" width="912" height="918" key="CommitChangelistDialog2/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619302670285" />
+    <state width="550" height="506" key="DebuggerActiveHint" timestamp="1619306234860">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="550" height="506" key="DebuggerActiveHint/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619300670185" />
-    <state width="1806" height="562" key="GridCell.Tab.0.bottom" timestamp="1619301309289">
+    <state width="550" height="506" key="DebuggerActiveHint/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306234860" />
+    <state width="1806" height="281" key="GridCell.Tab.0.bottom" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.0.bottom/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309289" />
-    <state width="1806" height="562" key="GridCell.Tab.0.center" timestamp="1619301309289">
+    <state width="1806" height="281" key="GridCell.Tab.0.bottom/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.0.center" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.0.center/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309289" />
-    <state width="1806" height="562" key="GridCell.Tab.0.left" timestamp="1619301309289">
+    <state width="1806" height="281" key="GridCell.Tab.0.center/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.0.left" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.0.left/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309289" />
-    <state width="1806" height="562" key="GridCell.Tab.0.right" timestamp="1619301309289">
+    <state width="1806" height="281" key="GridCell.Tab.0.left/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.0.right" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.0.right/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309289" />
-    <state width="1806" height="562" key="GridCell.Tab.1.bottom" timestamp="1619301309290">
+    <state width="1806" height="281" key="GridCell.Tab.0.right/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.1.bottom" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.1.bottom/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309290" />
-    <state width="1806" height="562" key="GridCell.Tab.1.center" timestamp="1619301309290">
+    <state width="1806" height="281" key="GridCell.Tab.1.bottom/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.1.center" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.1.center/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309290" />
-    <state width="1806" height="562" key="GridCell.Tab.1.left" timestamp="1619301309290">
+    <state width="1806" height="281" key="GridCell.Tab.1.center/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.1.left" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.1.left/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309290" />
-    <state width="1806" height="562" key="GridCell.Tab.1.right" timestamp="1619301309290">
+    <state width="1806" height="281" key="GridCell.Tab.1.left/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state width="1806" height="281" key="GridCell.Tab.1.right" timestamp="1619306307216">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1806" height="562" key="GridCell.Tab.1.right/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619301309290" />
-    <state x="2509" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1619163151807">
+    <state width="1806" height="281" key="GridCell.Tab.1.right/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619306307216" />
+    <state x="2509" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1619302672058">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2509" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619163151807" />
+    <state x="2509" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619302672058" />
     <state width="962" height="542" key="XDebugger.FullValuePopup" timestamp="1619149756235">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -295,6 +287,10 @@
       <screen x="68" y="27" width="1852" height="1053" />
     </state>
     <state x="530" y="27" width="1390" height="655" key="dock-window-2/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619160002383" />
+    <state x="2605" y="279" width="618" height="522" key="find.popup" timestamp="1619307450184">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2605" y="279" width="618" height="522" key="find.popup/68.27.1852.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1619307450184" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -320,9 +316,9 @@
           <option name="timeStamp" value="59" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/midleware/calcul/CalculAgent.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="62" />
+          <url>file://$PROJECT_DIR$/src/main/java/com/midleware/service/PolluantService.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

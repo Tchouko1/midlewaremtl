@@ -4,10 +4,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 
 @Entity(name = "so2_data")
 @XmlRootElement(name ="so2_data")
-public class SO2 {
+public class SO2  implements Serializable {
 
     @Id
     private int id;
@@ -53,5 +54,15 @@ public class SO2 {
 
     public void setDate(String date) {
         this.date = date;
+    }
+
+    public String getHour(){
+        if(!this.getDate().isEmpty()) {
+            String[] hour = this.getDate().split("\\s");
+            if(hour.length > 1)
+            return hour[1];
+        }
+
+        return "";
     }
 }

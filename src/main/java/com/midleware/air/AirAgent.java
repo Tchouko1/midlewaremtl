@@ -1,7 +1,10 @@
 package com.midleware.air;
 
 import com.midleware.address.Address;
+import com.midleware.polluant.Polluant;
+import com.midleware.service.PolluantService;
 import com.midleware.utils.MidleWareSQL;
+import jade.core.AID;
 import jade.core.Agent;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.core.behaviours.OneShotBehaviour;
@@ -14,9 +17,10 @@ import jade.lang.acl.ACLMessage;
 import jade.lang.acl.UnreadableException;
 
 import java.io.IOException;
-import java.sql.SQLException;
+import java.util.List;
 
 import static com.midleware.utils.MidleWareUtils.SEARCH_POLLUANT;
+import static com.midleware.utils.MidleWareUtils.SEARCH_CALCUL;
 
 
 public class AirAgent extends Agent {
@@ -55,28 +59,46 @@ public class AirAgent extends Agent {
                 if(aclMessage != null){
                     switch (aclMessage.getPerformative()){
                         case ACLMessage.CFP :
-                          //  try {
-                              /*  Address address = (Address) aclMessage.getContentObject();
-                                String stationID = getStationID(address.getArrondissement());
-                                System.out.println("J'ai recu la proposition pour rechercher la borne qui correspond a l'adresse:"+aclMessage.getContent());
-                                System.out.println("La station id de " + address.getArrondissement() + " est : " + stationID);
-                                System.out.println("Envoie de la station id vers l'agent recherche");
+                            try {
+                                Address address = (Address) aclMessage.getContentObject();
+                                System.out.println("J'ai recu la proposition pour rechercher la liste des polluants pour la station:" +
+                                        ""+address.getNumero() + " pour le : "+ address.getDate());
+                                System.out.println("Envoie les polluants vers l'agent calcul");
                                 ACLMessage aclMessage1 = aclMessage.createReply();
                                 aclMessage1.setPerformative(ACLMessage.INFORM);
-                                address.setNumero(stationID);
-                                aclMessage1.setContentObject(address);
-                                send(aclMessage1);*/
+                                aclMessage1.setContent("J'ai recu la proposition pour rechercher la liste des polluants pour la station:" +
+                                         ""+address.getNumero() + " pour le : "+ address.getDate());
+                                send(aclMessage1);
+
+
+                                //- envoie la liste des polluants a l'agent calcul....
+                                DFAgentDescription agentDescription = new DFAgentDescription();
+                                ServiceDescription serviceDescription = new ServiceDescription();
+                                serviceDescription.setType("calcul");
+                                serviceDescription.setName(SEARCH_CALCUL);
+                                agentDescription.addServices(serviceDescription);
+                                DFAgentDescription[] dfAgentDescriptions = DFService.search(myAgent, agentDescription);
+                                AID agentAddress = dfAgentDescriptions[0].getName();
+                                ACLMessage aclMessage2 = new ACLMessage(ACLMessage.CFP);
+                                aclMessage2.setContentObject(getPolluantByStationIDAndDate(address.getNumero(),address.getDate()).toArray());
+                                aclMessage2.addReceiver(agentAddress);
+                                send(aclMessage2);
+
+
+
                                 break;
-                          /*  } catch (UnreadableException | IOException e) {
+                            } catch (UnreadableException | IOException | FIPAException e) {
                                 e.printStackTrace();
                             }
-*/
 
                         case ACLMessage.ACCEPT_PROPOSAL:
 
+                            // pour recuperer le resultat du calcul
+
                             break;
                         case ACLMessage.INFORM :
-                            System.out.println("Merci de m'informer!!!");
+                            aclMessage.getContent();
+                            System.out.println(aclMessage.getContent()+" Maintenant je dois l'envoyer a l'agent Search");
                             break;
 
 
@@ -100,19 +122,9 @@ public class AirAgent extends Agent {
 
 
     // recupere le poluant
-    public String getStationID(String arrondissementVille ){
-
-        MidleWareSQL.makeJDBCConnection();
-        String stationID = MidleWareSQL.getStationIDFromDB(arrondissementVille);
-        try {
-            MidleWareSQL.getPreparedStatement().close();
-            MidleWareSQL.getConnection().close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-
-        return stationID;
+    public List<Polluant> getPolluantByStationIDAndDate(String stationId, String date ){
+        List<Polluant> polluantList = new PolluantService().getAllPolluantByStationIDAndDate(stationId, date);
+        return polluantList;
 
     }
 }

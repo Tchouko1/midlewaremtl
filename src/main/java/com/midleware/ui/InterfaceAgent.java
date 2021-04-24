@@ -5,6 +5,7 @@ import com.midleware.address.Address;
 import com.midleware.dao.AddressStationDAOImpl;
 import com.midleware.dao.PolluantDAO;
 import com.midleware.dao.PolluantDAOImpl;
+import com.midleware.service.PolluantService;
 import jade.core.AID;
 import jade.core.behaviours.CyclicBehaviour;
 import jade.domain.DFService;
@@ -41,8 +42,8 @@ public class InterfaceAgent extends GuiAgent {
                     switch (message.getPerformative()){
                         case ACLMessage.INFORM:
 
-                            new PolluantDAOImpl().getAllPolluantByStationIDAndDate("3", "10-01-2020");
-                            new PolluantDAOImpl().getAllSO2ByStationIDAndDate("3", "10-01-2020");
+
+
                             searchAgentGUI.showMessage("Sender: " +message.getSender().getName(), true);
                             searchAgentGUI.showMessage("Act de message : " +ACLMessage.getPerformative(message.getPerformative()), true);
                             searchAgentGUI.showMessage("Content  : " + message.getContent(), true);

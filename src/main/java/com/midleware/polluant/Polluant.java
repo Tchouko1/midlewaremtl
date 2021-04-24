@@ -5,12 +5,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity(name = "polluants")
 @XmlRootElement(name ="polluants")
-public class Polluant {
+public class Polluant  implements Serializable {
 
     @Id
     private int id;
@@ -99,5 +100,32 @@ public class Polluant {
 
     public void setSo2(List<SO2> so2) {
         this.so2 = so2;
+    }
+
+
+    public String getPm2_5() {
+        return pm2_5;
+    }
+
+    public void setPm2_5(String pm2_5) {
+        this.pm2_5 = pm2_5;
+    }
+
+    public List<PM> getPm() {
+        return pm;
+    }
+
+    public void setPm(List<PM> pm) {
+        this.pm = pm;
+    }
+
+    public String getHour(){
+        if(!this.getDate().isEmpty()) {
+            String[] hour = this.getDate().split("\\s");
+            if(hour.length > 1)
+                return hour[1];
+        }
+
+        return "";
     }
 }
